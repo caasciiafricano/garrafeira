@@ -32,10 +32,17 @@ function load(string $controller, string $action)
 // Sistema de roteamento
 $router = [
     "GET" => [
-        "/" => fn () => load("SiteController","index")
+        // Rotas da controller site
+        //--------------------------------------------------------------------------
+        "/" => fn () => load("SiteController","index"),
+        "/detalhar-produto" => fn () => load("SiteController","detalhar"),
+
+        // Rotas da controller site
+        //--------------------------------------------------------------------------
+        "/auth/login" => fn () => load("UtilizadorController","index")
     ],
 
     "POST" => [
-        "/login" => fn () => load("LoginController","index")
+        
     ]
 ];

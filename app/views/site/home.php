@@ -1,4 +1,4 @@
-<?php $this->layout('site/template', ['title' => 'Garraferia | Home']) ?>
+<?php $this->layout('site/template', ['title' => 'Garraferia']) ?>
 
 
 <div class="row">

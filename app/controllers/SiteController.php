@@ -12,4 +12,8 @@ class SiteController extends Controller
     return Controller::view("site/home");
   }
 
+  public function detalhar($params)
+  {
+    return Controller::view("site/visualizar_garrafa");
+  }
 }

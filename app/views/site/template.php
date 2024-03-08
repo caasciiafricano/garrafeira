@@ -19,7 +19,7 @@
         <!-- Barra de navegação mobile e tablete -->
         <nav style="background-color: #5e2129;">
             <div class="container nav-wrapper">
-                <a href="#" class="brand-logo">Garrafeira</a>
+                <a href="/" class="brand-logo">Garrafeira</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <form action="" method="GET">
@@ -31,7 +31,7 @@
                     </li>
                     <li><a href="sass.html"><i class="material-icons" style="color:#ffd700;">add_shopping_cart</i></a></li>
                     <li>|</li>
-                    <li><a href="login.php">Entrar</a></li>
+                    <li><a href="/auth/login">Entrar</a></li>
                     <li><a class="btn" href="sass.html" style="border-radius: 20px; background-color: #c8a2c8;">Cadastrar</a></li>
                 </ul>
             </div>
