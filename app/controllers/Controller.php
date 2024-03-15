@@ -8,7 +8,7 @@ abstract class Controller
     static function render($view, $data = [])
     {
         // View path
-        $path = "app/views/";
+        $path = "../app/views/";
         // Create new Plates instance
         $templates = new Engine($path);
 

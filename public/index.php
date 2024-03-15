@@ -1,6 +1,10 @@
 <?php
 
 // Importação das extensões de bibliotecas
+require_once "../config/config.php";
+require_once "../libs/KaasConnectionDB/kaasConnectionDB.php";
+require_once "../vendor/autoload.php";
+require_once "../router/routes.php";
  
 
 // Capturar a URI (Uniform Resource Identifier)
@@ -12,7 +16,7 @@ $request = $_SERVER['REQUEST_METHOD'];
 try {
     // Verificar requisão existe
     if(!$router[$request])
-        throw new Exception("Requisão do tipo {$request} não existe como parte das routas.");
+        throw new Exception("Requisão do tipo {$request} não existe como parte das rotas.");
 
     // Verificar se uri existe como parte da requisição enviada
     if(!array_key_exists($uri,$router[$request]))
@@ -20,7 +24,7 @@ try {
 
 
     // Se existir todos as verificações
-    $controller = $router[$request];
+    $controller = $router[$request][$uri];
     $controller();
 
 } catch (Exception $e) {

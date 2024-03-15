@@ -27,10 +27,16 @@ function load(string $controller, string $action)
 // Sistema de rotas
 $router = [
     "GET" => [
+        // Módulo site
         "/" => fn () => load("SiteController", "index"),
+
+        // Módulo Admin
+        "/admin/garrafa/nova" => fn () => load("AdminController", "index"),
     ],
 
     "POST" => [
-        
+
+        // Módulo Admin
+        "/admin/produto/cadastrar" => fn () => load("AdminController", "registrar"),
     ],
 ];

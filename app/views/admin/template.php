@@ -57,7 +57,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-danger text-light text-center py-3">
+    <footer class="bg-danger text-light text-center fixed-bottom py-3">
         <div class="container">
             <span>&copy; 2024 Garrafeiras Vinho D' Ouro</span>
         </div>
